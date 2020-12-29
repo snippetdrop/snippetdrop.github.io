@@ -1,0 +1,63 @@
+body {
+  /* background: #000;
+  color: #fff; */
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+}
+
+.feature-row {
+  text-align: center;
+}
+
+.feature-row h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.feature-row p {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.feature-row .logo {
+  margin-bottom: 25px;
+}
+
+.feature-row .sub-action {
+  font-size: .8em;
+}
+
+.feature-row-wrap {
+  width: 50rem;
+  margin: 0 auto 0;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.demo-video {
+  padding: 0;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px #ccc;
+}
+
+.how-it-works-row {
+  text-align: center;
+}
+
+.encryption-row {
+  margin: 100px auto 50px;
+}
+
+.encryption-row h1 {
+  margin-bottom: 30px;
+}
+
+.cta-row {
+  text-align: center;
+}
