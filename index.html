@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="SnippetDrop">
   <meta name="description"
-    content="Securely send and receive env vars, code snippets, and files without leaving VS Code. Uses asymmetric, end-to-end encryption.">
+    content="Securely send and receive env vars, code snippets, and files to any GitHub user without leaving VS Code. Uses asymmetric, end-to-end encryption.">
   <meta name="keywords"
     content="snippetdrop, vscode, vscode share code, send code snippet, share code snippet, share code" />
   <meta name="robots" content="index, follow">
@@ -26,8 +26,8 @@
             <img class="logo" src="/images/logo.png" alt="SnippetDrop" width="100" height="auto">
           </div>
           <div class="col-12">
-            <h1>Encrypted code snippet sharing for VS Code</h1>
-            <p>Securely send and receive env vars, code snippets, and files without leaving your code editor.</p>
+            <h1>🔒 Encrypted code snippet sharing for VS Code</h1>
+            <p>Securely send and receive env vars, code snippets, and files to any GitHub user without leaving VS Code.</p>
             <p>
               <a class="btn btn-lg btn-success"
                 href="https://marketplace.visualstudio.com/items?itemName=SnippetDrop.snippetdrop">Download VS Code
@@ -53,7 +53,7 @@
             <img class="bd-placeholder-img card-img-top" width="100%" height="auto" src="/images/setup.png">
             <div class="card-body">
               <h3>Setup</h3>
-              <p class="card-text">Download the SnippetDrop extension and login with GitHub. A public/private key pair
+              <p class="card-text">Download the SnippetDrop extension and <strong>login with GitHub</strong>. A public/private key pair
                 will be generated locally.</p>
             </div>
           </div>
@@ -82,27 +82,22 @@
       </div>
     </div>
     <div class="container">
-      <div class="row encryption-row">
-        <div class="col-6">
-          <h1>End-to-End Encryption</h1>
-          <p>SnippetDrop uses <strong>2048 bit asymmetric RSA encryption</strong> via <a
-              target="_blank" href="https://www.npmjs.com/package/node-rsa">node-rsa</a>.</p>
-          <p><strong>Key pairs</strong> are <strong>generated locally</strong> on your
-            device.</p>
-          <p><strong>Private keys</strong> stay on your device; <strong>never
-              uploaded</strong>. Public keys are uploaded to SnippetDrop's server.</p>
-          <p><strong>Sending a snippet:</strong> 1) extension downloads recipient's
-            public keys, 2) encrypts snippet, 3) uploads encrypted snippet to SnippetDrop's servers.</p>
-          <p><strong>Receiving snippets:</strong> 1) extension fetches encrypted snippets
-            for your username + public key, 2) decrypts and stores them locally using private key.</p>
-          <p><strong>Encrypted snippets are deleted from servers</strong> once the
-            recipient has downloaded them or 7 days has passed.</p>
-          <p><strong>Native support for multiple devices</strong> per user. Snippets are
-            encrypted and sent per device public key.</p>
-        </div>
-        <div class="col-6">
+      <div class="row feature-row">
+        <div class="feature-row-wrap">
+        <div class="col-12">
+          <h1>🔐 End-to-End Encryption</h1>
+          <ul class="encryption-details-list">
+            <li>2048 bit asymmetric RSA encryption using <a
+              target="_blank" href="https://www.npmjs.com/package/node-rsa">node-rsa</a>.</li>
+            <li>Key pairs generated locally on your device.</li>
+            <li><strong>Private keys</strong> stay on your device; <strong>never uploaded</strong>.</li>
+            <li>Encrypted snippets removed from servers upon recipient download or 7 days.</li>
+            <li>Native support for multiple VS Code workspaces per user.</li>
+            <li>Open sourced extension and encryption implementation on <a target="_blank" href="https://github.com/snippetdrop/snippetdrop-vscode">GitHub</a>.</li>
+          </ul>
           <img src="/images/architecture.png" alt="SnippetDrop Encryption Architecture" width="100%" height="auto">
         </div>
+      </div>
       </div>
     </div>
     <div class="container">
