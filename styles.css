@@ -38,6 +38,31 @@ a {
   padding-bottom: 100px;
 }
 
+.encryption-wrap {
+  padding-top: 0;
+}
+
+.how-it-works-list-group {
+  margin: 50px 0 25px 0;
+}
+
+.how-it-works-list-group .list-group-item {
+  padding: 25px 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.how-it-works-list-group .list-group-item h5 {
+  
+}
+
+.how-it-works-list-group .list-group-item p {
+  font-size: .9em;
+}
+
 .demo-video {
   padding: 0;
   margin: 20px auto;
