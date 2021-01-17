@@ -48,11 +48,13 @@
                     3: document.querySelector("#vid3")
                   }
                   if (x == num) {
-                    document.querySelector("#vid" + x + "desc").style.opacity = 1;
+                    document.querySelector("#vid" + x + "desc").style.background = '#7d4098';
+                    document.querySelector("#vid" + x + "desc").style.color = '#fff';
                     vids[x].style.display = 'inline';
                     vids[x].play();
                   } else {
-                    document.querySelector("#vid" + x + "desc").style.opacity = .25;
+                    document.querySelector("#vid" + x + "desc").style.background = '#fafafa';
+                    document.querySelector("#vid" + x + "desc").style.color = '#000';
                     vids[x].style.display = 'none';
                     vids[x].pause();
                     vids[x].currentTime = 0;
